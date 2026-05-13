@@ -24,9 +24,11 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <div>
-                  <h4 className="text-lg font-bold">Prefer email?</h4>
-                  <p className="text-gray-400">contact@aa-designs.com</p>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Prefer email?</h4>
+                  <a href="mailto:contact@aa-designs.com" className="inline-block px-4 py-2 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500/20 dark:hover:bg-indigo-500/15 hover:border-indigo-500/50 transition-all font-semibold">
+                    contact@aa-designs.com
+                  </a>
                 </div>
               </div>
 
@@ -37,8 +39,8 @@ const Contact: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold">Quick Turnaround</h4>
-                  <p className="text-gray-400">I usually respond within 24 business hours.</p>
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white">Quick Turnaround</h4>
+                  <p className="text-gray-500 dark:text-gray-400">I usually respond within 24 business hours.</p>
                 </div>
               </div>
             </div>
