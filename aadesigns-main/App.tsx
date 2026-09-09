@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, createContext, useContext, useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import { Analytics } from '@vercel/analytics/react';
 
 // Theme Context
 type Theme = 'dark' | 'light';
@@ -59,6 +60,7 @@ const App: React.FC = () => {
           </Suspense>
         </Layout>
       </Router>
+      <Analytics />
     </ThemeContext.Provider>
   );
 };
