@@ -402,22 +402,20 @@ p {
     linear-gradient(0deg, var(--bg) 0%, transparent 28%);
 }
 .hero-figure {
+  /* subtle full-body watermark — never cropped at an edge */
+  --fig-opacity: 0.42;
   position: absolute;
   z-index: -1;
-  right: max(0px, calc((100vw - var(--max)) / 2 - 20px));
-  bottom: 0;
-  height: min(96vh, 1000px);
+  right: max(24px, calc((100vw - var(--max)) / 2));
+  bottom: 28px;
+  height: min(calc(100vh - 120px), 900px);
+  height: min(calc(100svh - 120px), 900px);
   width: auto;
-  opacity: 0.72;
+  max-width: none;
+  opacity: var(--fig-opacity);
   pointer-events: none;
   user-select: none;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 98%),
-    linear-gradient(90deg, transparent 0%, #000 22%);
-  -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 98%),
-    linear-gradient(90deg, transparent 0%, #000 22%);
-  mask-composite: intersect;
-  filter: drop-shadow(0 0 40px rgba(255, 46, 154, 0.25));
+  filter: drop-shadow(0 0 36px rgba(255, 46, 154, 0.22));
   animation: figureIn 1.6s ease-out both;
 }
 @keyframes figureIn {
@@ -426,7 +424,7 @@ p {
     transform: translateY(18px);
   }
   to {
-    opacity: 0.72;
+    opacity: var(--fig-opacity);
     transform: none;
   }
 }
@@ -543,12 +541,12 @@ p {
       linear-gradient(0deg, rgba(7, 4, 11, 0.97) 0%, rgba(7, 4, 11, 0.86) 48%, rgba(7, 4, 11, 0.25) 78%, rgba(7, 4, 11, 0.5) 100%);
   }
   .hero-figure {
-    right: -14%;
-    left: auto;
-    top: 64px;
+    --fig-opacity: 0.26;
+    right: 12px;
+    top: 88px;
     bottom: auto;
-    height: 82vh;
-    opacity: 0.5;
+    height: calc(100vh - 116px);
+    height: calc(100svh - 116px);
   }
   .hero-content {
     text-align: center;
@@ -1128,6 +1126,6 @@ p {
     transform: none;
   }
   .hero-figure {
-    opacity: 0.72;
+    opacity: var(--fig-opacity);
   }
 }

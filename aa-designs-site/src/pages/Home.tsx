@@ -23,8 +23,8 @@ export default function Home() {
           src="/images/alissa-figure.webp"
           alt=""
           aria-hidden="true"
-          width={450}
-          height={1415}
+          width={408}
+          height={1373}
           fetchPriority="high"
         />
         <Butterflies />
