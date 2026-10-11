@@ -22,7 +22,7 @@ export default function Portfolio() {
             <Reveal key={i} className="panel card project">
               <div className={`project-art${p.placeholder ? ' placeholder' : ''}`}>
                 {p.placeholder ? (
-                  <img src="/images/logo-emblem.webp" alt="" loading="lazy" width={249} height={195} />
+                  <img src="/images/logo-emblem.webp" alt="" loading="lazy" width={246} height={195} />
                 ) : (
                   <span className="art-title">{p.title}</span>
                 )}

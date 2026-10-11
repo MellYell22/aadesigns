@@ -24,16 +24,16 @@ export default function Home() {
           alt=""
           aria-hidden="true"
           width={408}
-          height={1373}
+          height={1396}
           fetchPriority="high"
         />
         <Butterflies />
 
         <div className="container">
           <div className="hero-content">
-            <img className="hero-emblem" src="/images/logo-emblem.webp" alt="" width={249} height={195} />
+            <img className="hero-emblem" src="/images/logo-emblem.webp" alt="" width={246} height={195} />
             <h1 id="hero-title" className="hero-title">AA Designs — Web Designer</h1>
-            <img className="hero-wordmark" src="/images/logo-wordmark.webp" alt="AA Designs" width={464} height={113} />
+            <img className="hero-wordmark" src="/images/logo-wordmark.webp" alt="AA Designs" width={470} height={117} />
             <p className="hero-role">Web Designer</p>
             <p className="script hero-slogan">Dream, Transform, Fly.</p>
             <hr className="divider" />
