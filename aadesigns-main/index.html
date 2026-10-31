@@ -1,96 +1,43 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AA Designs | Custom Websites & AI Apps</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              dark: {
-                primary: '#0B0F1C',
-                secondary: '#111827',
-              }
-            }
-          }
-        }
+    <title>AA Designs | Luxury Websites, Mobile Apps &amp; AI Solutions</title>
+    <meta name="description" content="AA Designs creates custom websites, iOS &amp; Android apps, and AI-powered solutions for businesses ready to grow. Dream, Transform, Fly." />
+    <meta name="theme-color" content="#07040b" />
+    <link rel="canonical" href="https://aa-designs.com/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/favicon-180.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AA Designs" />
+    <meta property="og:title" content="AA Designs | Dream, Transform, Fly." />
+    <meta property="og:description" content="Custom websites, mobile apps and AI solutions — designed with luxury and built to perform." />
+    <meta property="og:url" content="https://aa-designs.com/" />
+    <meta property="og:image" content="https://aa-designs.com/images/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="/images/alissa-figure.webp" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "AA Designs",
+        "url": "https://aa-designs.com",
+        "logo": "https://aa-designs.com/favicon-512.png",
+        "image": "https://aa-designs.com/images/og-image.jpg",
+        "email": "contact@aa-designs.com",
+        "slogan": "Dream, Transform, Fly.",
+        "founder": { "@type": "Person", "name": "Alissa" },
+        "description": "Custom website design, iOS and Android app development, AI-powered applications, branding and custom technology solutions."
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --bg-primary: #FFFFFF;
-        --bg-secondary: #F3F4F6;
-        --text-primary: #111827;
-        --text-muted: #6B7280;
-        --card-bg: rgba(0, 0, 0, 0.03);
-        --card-border: rgba(0, 0, 0, 0.08);
-      }
-
-      .dark {
-        --bg-primary: #0B0F1C;
-        --bg-secondary: #111827;
-        --text-primary: #FFFFFF;
-        --text-muted: #9CA3AF;
-        --card-bg: rgba(255, 255, 255, 0.05);
-        --card-border: rgba(255, 255, 255, 0.1);
-      }
-
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: var(--bg-primary);
-        color: var(--text-primary);
-        margin: 0;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-
-      .glass-card {
-        background: var(--card-bg);
-        backdrop-filter: blur(12px);
-        border: 1px solid var(--card-border);
-        transition: all 0.3s ease;
-      }
-
-      .accent-gradient {
-        background: linear-gradient(135deg, #4F46E5, #06B6D4);
-      }
-
-      .text-gradient {
-        background: linear-gradient(135deg, #4F46E5, #06B6D4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .bg-grid {
-        background-image: radial-gradient(circle at 1px 1px, var(--card-border) 1px, transparent 0);
-        background-size: 40px 40px;
-      }
-
-      /* Fix for smooth transitions on common elements */
-      * {
-        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <noscript>AA Designs — custom websites, mobile apps and AI solutions. Email contact@aa-designs.com</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
