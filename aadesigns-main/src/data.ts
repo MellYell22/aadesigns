@@ -137,17 +137,11 @@ export const PROJECTS: Project[] = [
     status: 'Live',
   },
   {
-    title: 'Your Project Here',
-    category: 'Coming soon',
-    description: 'Client work will be showcased here once it is completed and approved for sharing.',
-    status: 'Placeholder',
-    placeholder: true,
-  },
-  {
-    title: 'Your Project Here',
-    category: 'Coming soon',
-    description: 'Have an idea for a website, app or AI tool? It could be the next featured build.',
-    status: 'Placeholder',
+    title: 'Your Project Could Be Next',
+    category: 'Now booking',
+    description:
+      'Have an idea for a website, app or AI tool? Let’s design it together — client work will be showcased here once completed and approved for sharing.',
+    status: 'Coming soon',
     placeholder: true,
   },
 ];

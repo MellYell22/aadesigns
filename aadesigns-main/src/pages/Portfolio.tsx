@@ -19,7 +19,7 @@ export default function Portfolio() {
       <section className="section" style={{ paddingTop: 30 }}>
         <div className="container grid grid-2">
           {PROJECTS.map((p, i) => (
-            <Reveal key={i} className="panel card project">
+            <Reveal key={i} className={`panel card project${p.placeholder ? ' project-wide' : ''}`}>
               <div className={`project-art${p.placeholder ? ' placeholder' : ''}`}>
                 {p.placeholder ? (
                   <img src="/images/logo-emblem.webp" alt="" loading="lazy" width={246} height={195} />
@@ -32,12 +32,12 @@ export default function Portfolio() {
                 <p className="project-cat">{p.category}</p>
                 <h2 style={{ fontSize: 'clamp(20px,2vw,24px)' }}>{p.title}</h2>
                 <p style={{ color: 'var(--muted)', margin: 0 }}>{p.description}</p>
+                {p.placeholder && (
+                  <Link to="/contact" className="btn btn-primary" style={{ marginTop: 22 }}>Start Your Project</Link>
+                )}
               </div>
             </Reveal>
           ))}
-        </div>
-        <div className="container center" style={{ marginTop: 50 }}>
-          <Link to="/contact" className="btn btn-primary">Start Your Project</Link>
         </div>
       </section>
     </>

@@ -761,6 +761,30 @@ p {
     linear-gradient(135deg, #1a0a23, #0b0510);
   border-bottom: 1px solid var(--line-soft);
 }
+.project-wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
+  align-items: stretch;
+}
+.project-wide .project-art {
+  aspect-ratio: auto;
+  min-height: 220px;
+  border-bottom: 0;
+  border-right: 1px solid var(--line-soft);
+}
+.project-wide .project-body {
+  align-self: center;
+}
+@media (max-width: 680px) {
+  .project-wide {
+    grid-template-columns: 1fr;
+  }
+  .project-wide .project-art {
+    border-right: 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+}
 .project-art.placeholder {
   background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0 12px, transparent 12px 24px),
     linear-gradient(135deg, #140a1b, #0a050e);
