@@ -1,20 +1,11 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AA Designs — Website
 
-# Run and deploy your AI Studio app
+AA Designs website, built from the approved poster (`brand/aa-designs-poster-APPROVED.png`).
 
-This contains everything you need to run your app locally.
+- React + Vite + TypeScript, deployed on Vercel
+- Pages: Home, About, Services, Portfolio, Contact
+- Contact form delivers to contact@aa-designs.com via FormSubmit (first submission sends a one-time activation email)
 
-View your app in AI Studio: https://ai.studio/apps/c2e4746c-dc22-489a-9351-1b96d76bcf74
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Vercel settings
+- Root Directory: `aadesigns-main`
+- Framework preset: Vite (build `npm run build`, output `dist`)
