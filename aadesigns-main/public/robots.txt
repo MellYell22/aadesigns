@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aa-designs.com/sitemap.xml
+Sitemap: https://www.aa-designs.com/sitemap.xml

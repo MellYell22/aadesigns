@@ -1,5 +1,5 @@
 export const CONTACT_EMAIL = 'contact@aa-designs.com';
-export const SITE_URL = 'https://aa-designs.com';
+export const SITE_URL = 'https://www.aa-designs.com';
 
 export type IconName =
   | 'monitor'
