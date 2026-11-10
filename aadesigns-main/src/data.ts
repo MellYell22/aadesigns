@@ -119,6 +119,7 @@ export interface Project {
   description: string;
   status: string;
   placeholder?: boolean;
+  url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -128,6 +129,14 @@ export const PROJECTS: Project[] = [
     description:
       'An AI-powered companion app for Bible reading, study and reflection — designed and built by AA Designs.',
     status: 'AA Designs original',
+  },
+  {
+    title: 'GiftMas Tracker',
+    category: 'Web App · Gift Planning',
+    description:
+      'A Christmas gift organizer with recipient budgets, gift tracking for bought, wrapped and given items, and an AI Shopper Helper to plan thoughtful gifts.',
+    status: 'Live',
+    url: 'https://giftmastracker.com',
   },
   {
     title: 'AA-Designs.com',
