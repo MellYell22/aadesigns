@@ -4,7 +4,7 @@ import { usePageMeta } from '../components/usePageMeta';
 import { PROJECTS } from '../data';
 
 export default function Portfolio() {
-  usePageMeta('Portfolio', 'Selected projects by AA Designs, including the Bible AI Companion app.', '/portfolio');
+  usePageMeta('Portfolio', 'Selected projects by AA Designs, including Bible AI Companion and GiftMas Tracker.', '/portfolio');
   return (
     <>
       <section className="page-head">
@@ -32,6 +32,9 @@ export default function Portfolio() {
                 <p className="project-cat">{p.category}</p>
                 <h2 style={{ fontSize: 'clamp(20px,2vw,24px)' }}>{p.title}</h2>
                 <p style={{ color: 'var(--muted)', margin: 0 }}>{p.description}</p>
+                {p.url && (
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 22 }} aria-label={`Visit ${p.title} (opens in a new tab)`}>Visit Live App</a>
+                )}
                 {p.placeholder && (
                   <Link to="/contact" className="btn btn-primary" style={{ marginTop: 22 }}>Start Your Project</Link>
                 )}
