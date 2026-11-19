@@ -24,7 +24,18 @@ export default function Portfolio() {
                 {p.placeholder ? (
                   <img src="/images/logo-emblem.webp" alt="" loading="lazy" width={246} height={195} />
                 ) : (
-                  p.url ? (
+                  p.url === 'https://giftmastracker.com' ? (
+                    <a href={p.url} aria-label="Open GiftMas Tracker" style={{ display: 'grid', placeItems: 'center', width: '100%', height: '100%' }}>
+                      <img
+                        src="https://giftmastracker.com/og-image.png"
+                        alt="GiftMas Tracker link preview"
+                        width={1200}
+                        height={630}
+                        loading="lazy"
+                        style={{ display: 'block', width: '100%', height: '100%', objectFit: 'contain' }}
+                      />
+                    </a>
+                  ) : p.url ? (
                     <a href={p.url} className="art-title" aria-label={`Open ${p.title}`}>{p.title}</a>
                   ) : (
                     <span className="art-title">{p.title}</span>
