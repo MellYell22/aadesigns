@@ -129,6 +129,7 @@ export const PROJECTS: Project[] = [
     description:
       'An AI-powered companion app for Bible reading, study and reflection — designed and built by AA Designs.',
     status: 'AA Designs original',
+    url: 'https://mybibleaicompanion.com',
   },
   {
     title: 'GiftMas Tracker',
