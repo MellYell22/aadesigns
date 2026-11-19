@@ -24,7 +24,11 @@ export default function Portfolio() {
                 {p.placeholder ? (
                   <img src="/images/logo-emblem.webp" alt="" loading="lazy" width={246} height={195} />
                 ) : (
-                  <span className="art-title">{p.title}</span>
+                  p.url ? (
+                    <a href={p.url} className="art-title" aria-label={`Open ${p.title}`}>{p.title}</a>
+                  ) : (
+                    <span className="art-title">{p.title}</span>
+                  )
                 )}
               </div>
               <div className="project-body">
